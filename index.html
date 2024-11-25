@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ancora</title>
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script> -->
+  <link href="vendor/css/bootstrap.min.css" rel="stylesheet">
+  <script src="vendor/js/bootstrap.bundle.min.js"></script>
+  <script src='js/jquery.min.js'></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header-panel w-100 d-inline-block">
+      <div class="strip-reserve">
+        <a href="#" class="btn">RESERVE A TABLE</a>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Promotions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header w-100 position-relative">
+        <div class="logo">
+          <img src="images/logo.svg" alt="">
+        </div>
+
+        <div id="carouselhome" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselhome" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselhome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselhome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="overlay-black"></div>
+              <img src="images/slider-1.jpg" class="d-block w-100" alt="...">
+              <div
+                class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0 animate__animated animate__bounceIn">
+                <h2 class="py-2 px-4">inspired by the <br> Mediterranean way <br>of living</h2>
+                <a href="#" class="btn btn-outline-light px-4 py-2 rounded-0">RESERVE TABLE</a>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <div class="overlay-black"></div>
+              <img src="images/slider-1.jpg" class="d-block w-100" alt="...">
+              <div
+                class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0 animate__animated animate__bounceIn">
+                <h2 class="py-2 px-4">inspired by the <br> Mediterranean way <br>of living - 2</h2>
+                <a href="#" class="btn btn-outline-light px-4 py-2 rounded-0">RESERVE TABLE</a>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <div class="overlay-black"></div>
+              <img src="images/slider-1.jpg" class="d-block w-100" alt="...">
+              <div
+                class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0 animate__animated animate__bounceIn">
+                <h2 class="py-2 px-4">inspired by the <br> Mediterranean way <br>of living - 3</h2>
+                <a href="#" class="btn btn-outline-light px-4 py-2 rounded-0">RESERVE TABLE</a>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev invisible" type="button" data-bs-target="#carouselhome"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next invisible" type="button" data-bs-target="#carouselhome"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-panel w-100 d-inline-block">
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 conte-col">
+              <div class="col-content">
+                <h1 class="font-felix">ABOUT US</h1>
+                <p>Immerse yourself in a culinary journey inspired by the Mediterranean way of living at our restaurant.
+                  With each dish, we celebrate the vibrant flavors and wholesome ingredients that define this rich
+                  culinary tradition.</p>
+                <a href="#" class="btn btn-green btn-outline-light px-4 py-2 rounded-0">READ MORE</a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="pic-col">
+                <div class="bottom">
+                  <img src="images/about-2.png" class="" alt="">
+                </div>
+                <div class="top">
+                  <img src="images/about-1.jpg" class="" alt="">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="promotion-panel  row">
+      <div class="heade-col w-100 text-center">
+        <h4>PROMOTIONS</h4>
+        <h1 class="font-felix">MORE THAN JUST A<br>DINING DESTINATION</h1>
+      </div>
+
+      <div id="promoCarousel" class="carousel slide container" data-bs-ride="carousel">
+        <div class="carousel-inner w-100">
+          <div class="carousel-item active">
+            <div class="col-md-4">
+              <div class="card card-body">
+                <div class="slide-cnt">
+                  <img class="img-fluid" src="images/promotion_1.png">
+                </div>
+              </div>
+              <div class="caption-bottom">
+                <div class="conte-col">
+                  <h4 class="font-felix mb-0">Weekday Happy Hour Delight</h4>
+                  <div class="des_col">
+                    <p>Immerse yourself in a culinary journey inspired by the Mediterranean way of living</p>
+                    <a href="#" class="btn btn-green btn-outline-light px-4 py-2 rounded-0">RESERVE NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-4">
+              <div class="card card-body">
+                <div class="slide-cnt">
+                  <img class="img-fluid" src="images/promotion_2.png">
+                </div>
+                <div class="caption-bottom">
+                  <div class="conte-col">
+                    <h4 class="font-felix mb-0">Celebrate with Us: Holiday Feast</h4>
+                    <div class="des_col">
+                      <p>Immerse yourself in a culinary journey inspired by the Mediterranean way of living</p>
+                      <a href="#" class="btn btn-green btn-outline-light px-4 py-2 rounded-0">RESERVE NOW</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-4">
+              <div class="card card-body">
+                <div class="slide-cnt">
+                  <img class="img-fluid" src="images/promotion_3.png">
+                </div>
+                <div class="caption-bottom">
+                  <div class="conte-col">
+                    <h4 class="font-felix mb-0">Wine & Dine Wednesdays</h4>
+                    <div class="des_col">
+                      <p>Immerse yourself in a culinary journey inspired by the Mediterranean way of living</p>
+                      <a href="#" class="btn btn-green btn-outline-light px-4 py-2 rounded-0">RESERVE NOW</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="col-md-4">
+              <div class="card card-body">
+                <div class="slide-cnt">
+                  <img class="img-fluid" src="images/promotion_1.png">
+                </div>
+              </div>
+              <div class="caption-bottom">
+                <div class="conte-col">
+                  <h4 class="font-felix mb-0">Weekday Happy Hour Delight</h4>
+                  <div class="des_col">
+                    <p>Immerse yourself in a culinary journey inspired by the Mediterranean way of living</p>
+                    <a href="#" class="btn btn-green btn-outline-light px-4 py-2 rounded-0">RESERVE NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="d-flex justify-content-center mt-5">
+        <a href="#" class="btn btn-green white btn-outline-light px-4 py-2 rounded-0">VIEW MORE</a>
+      </div>
+
+    </div>
+    <div class="events-panel row">
+      <div class="container">
+        <div class="row">
+          <h1 class="font-felix text-center pb-3 color-green">Events</h1>
+          <div class="main-row row">
+            <div class="card">
+              <div class="course_card">
+                <div class="course_card_img"><img src="images/event-1.png" alt="course" /></div>
+                <div class="course_card_content">
+                  <h3 class="title">WEDDING EVENT</h3>
+                  <h2 class="font-felix">Chef’s Table Experience: A Culinary Journey</h2>
+                  <p class="description">Immerse yourself in a culinary journey inspired by the Mediterranean way of
+                    living at our restaurant. With each dish, we celebrate the vibrant flavors...</p>
+                </div>
+                <div class="course_card_footer"><span>RESERVE YOUR SPOT FOR AN EXCLUSIVE MEAL</span><a class="nav-item"
+                    href="#"><img src="images/arw-right.svg" alt=""></a></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="course_card">
+                <div class="course_card_img"><img src="images/event-1.png" alt="course" /></div>
+                <div class="course_card_content">
+                  <h3 class="title">VALENTINE EVENT</h3>
+                  <h2 class="font-felix">Date Night Special: Romantic Dinner Under the Stars</h2>
+                  <p class="description">Surprise your special someone with a romantic Date Night Dinner. Enjoy a
+                    candlelit meal on our terrace, featuring a specially curated menu...</p>
+                </div>
+                <div class="course_card_footer"><span>Your Table Awaits – Reserve Now</span><a class="nav-item"
+                    href="#"><img src="images/arw-right.svg" alt=""></a></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="course_card">
+                <div class="course_card_img"><img src="images/event-1.png" alt="course" /></div>
+                <div class="course_card_content">
+                  <h3 class="title">BRITHDAY EVENT</h3>
+                  <h2 class="font-felix">Cocktail Mixology Night: Shake, Stir, Sip</h2>
+                  <p class="description">Unleash your inner mixologist at our Cocktail Mixology Night. Learn the art of
+                    crafting signature cocktails with our talented bartenders, and enjoy a lively...</p>
+                </div>
+                <div class="course_card_footer"><span>Book Your Table for a Night of Delight</span><a class="nav-item"
+                    href="#"><img src="images/arw-right.svg" alt=""></a></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="course_card">
+                <div class="course_card_img"><img src="images/event-1.png" alt="course" /></div>
+                <div class="course_card_content">
+                  <h3 class="title">VALENTINE EVENT</h3>
+                  <h2 class="font-felix">Date Night Special: Romantic Dinner Under the Stars</h2>
+                  <p class="description">Surprise your special someone with a romantic Date Night Dinner. Enjoy a
+                    candlelit meal on our terrace, featuring a specially curated menu...</p>
+                </div>
+                <div class="course_card_footer"><span>Your Table Awaits – Reserve Now</span><a class="nav-item"
+                    href="#"><img src="images/arw-right.svg" alt=""></a></div>
+              </div>
+            </div>
+
+
+            <!-- <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="course_card">
+                <div class="course_card_img"><img src="images/event-1.png" alt="course"/></div>
+                <div class="course_card_content">
+                  <h3 class="title">WEDDING EVENT</h3>
+                  <h2 class="font-felix">Chef’s Table Experience: A Culinary Journey</h2>
+                  <p class="description">Immerse yourself in a culinary journey inspired by the Mediterranean way of living at our restaurant. With each dish, we celebrate the vibrant flavors...</p>
+                </div>
+                <div class="course_card_footer"><span>RESERVE YOUR SPOT FOR AN EXCLUSIVE MEAL</span><a class="nav-item" href="#"><img src="images/arw-right.svg" alt=""></a></div>
+              </div>
+            </div>
+            <div class="course_card">
+              <div class="course_card_img"><img src="images/event-1.png" alt="course"/></div>
+              <div class="course_card_content">
+                <h3 class="title">VALENTINE EVENT</h3>
+                <h2 class="font-felix">Date Night Special: Romantic Dinner Under the Stars</h2>
+                <p class="description">Surprise your special someone with a romantic Date Night Dinner. Enjoy a candlelit meal on our terrace, featuring a specially curated menu...</p>
+              </div>
+              <div class="course_card_footer"><span>Your Table Awaits – Reserve Now</span><a class="nav-item" href="#"><img src="images/arw-right.svg" alt=""></a></div>
+            </div>
+            <div class="course_card">
+              <div class="course_card_img"><img src="images/event-1.png" alt="course"/></div>
+              <div class="course_card_content">
+                <h3 class="title">BRITHDAY EVENT</h3>
+                <h2 class="font-felix">Cocktail Mixology Night: Shake, Stir, Sip</h2>
+                <p class="description">Unleash your inner mixologist at our Cocktail Mixology Night. Learn the art of crafting signature cocktails with our talented bartenders, and enjoy a lively...</p>
+              </div>
+              <div class="course_card_footer"><span>Book Your Table for a Night of Delight</span><a class="nav-item" href="#"><img src="images/arw-right.svg" alt=""></a></div>
+            </div> -->
+          </div>
+
+          <div class="d-flex justify-content-center mt-5">
+            <a href="#" class="btn btn-green btn-outline-light px-4 py-2 rounded-0">VIEW MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-panel row">
+      <div class="container">
+        <div class="row">
+          <h1 class="font-felix text-center pb-3 white">GALLERY</h1>
+          <!-- Nav Tabs List -->
+          <ul class="nav nav-tabs d-none d-md-flex justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="home" aria-selected="true">All</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="profile" aria-selected="false">ANCORA Drunch</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="contact" aria-selected="false">ANORA Interior</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="contact" aria-selected="false">Iftar</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="contact" aria-selected="false">Shisha</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="contact" aria-selected="false">ANCORA Breakfast</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="contact" aria-selected="false">Cocktails</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="contact" aria-selected="false">Food</button>
+            </li>
+          </ul>
+
+          <!-- Nav Tabs Content -->
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane accordion-item fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <h2 class="accordion-header d-md-none" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">All</button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#myTabContent">
+                <div class="accordion-body">
+                  <div class="row">
+                    <a href="images/glry_1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_1.jpg" class="img-fluid">
+                    </a>
+                    <a href="images/glry_2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_2.jpg" class="img-fluid">
+                    </a>
+                    <a href="images/glry_3.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_3.jpg" class="img-fluid">
+                    </a>
+                    <a href="images/glry_4.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_4.jpg" class="img-fluid">
+                    </a>
+                  </div>
+                  <div class="row ">
+                    <a href="images/glry_5.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_5.jpg" class="img-fluid">
+                    </a>
+                    <a href="images/glry_6.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_6.jpg" class="img-fluid">
+                    </a>
+                    <a href="images/glry_7.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_7.jpg" class="img-fluid">
+                    </a>
+                    <a href="images/glry_8.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_8.jpg" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane accordion-item fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <h2 class="accordion-header d-md-none" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">ANCORA Drunch</button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse d-md-block" aria-labelledby="headingTwo"
+                data-bs-parent="#myTabContent">
+                <div class="accordion-body">
+                  <div class="row">
+                    <a href="images/glry_1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_1.jpg" class="img-fluid">
+                    </a>
+                    <a href="images/glry_2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_2.jpg" class="img-fluid">
+                    </a>
+                    <a href="images/glry_3.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_3.jpg" class="img-fluid">
+                    </a>
+                    <a href="images/glry_4.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_4.jpg" class="img-fluid">
+                    </a>
+                  </div>
+                  <div class="row ">
+                    <a href="images/glry_5.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_5.jpg" class="img-fluid">
+                    </a>
+                    <a href="images/glry_6.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_6.jpg" class="img-fluid">
+                    </a>
+                    <a href="images/glry_7.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_7.jpg" class="img-fluid">
+                    </a>
+                    <a href="images/glry_8.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_8.jpg" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane accordion-item fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+              <h2 class="accordion-header d-md-none" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">ANORA
+                  Interior</button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse d-md-block" aria-labelledby="headingThree"
+                data-bs-parent="#myTabContent">
+                <div class="accordion-body">
+                  <div class="row">
+                    <a href="images/glry_1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_1.jpg" class="img-fluid">
+                    </a>
+                    <a href="images/glry_2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_2.jpg" class="img-fluid">
+                    </a>
+                    <a href="images/glry_3.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_3.jpg" class="img-fluid">
+                    </a>
+                    <a href="images/glry_4.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_4.jpg" class="img-fluid">
+                    </a>
+                  </div>
+                  <div class="row">
+                    <a href="images/glry_5.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_5.jpg" class="img-fluid">
+                    </a>
+                    <a href="images/glry_6.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_6.jpg" class="img-fluid">
+                    </a>
+                    <a href="images/glry_7.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_7.jpg" class="img-fluid">
+                    </a>
+                    <a href="images/glry_8.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                      <img src="images/glry_8.jpg" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <div class="single-box">
+              <img src="images/logo-footer.png" class="logo-ftr" alt="">
+              <p>Make sure you have the perfect spot by reserving your table with us today. Whether it’s a romantic
+                dinner, a family gathering, or a night out with friends, we’re here to make it memorable."</p>
+              <a href="#" class="btn btn-green  btn-outline-light px-4 py-2 rounded-0">RESERVE A TABLE</a>
+              <div class="location">
+                <h3>LOCATION</h3>
+                <p>Sheikh Mohammed bin Rashid Boulevard, Downtown Dubai, Dubai, UAE.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-6 col-sm-6">
+            <div class="single-box float-end">
+              <h2 class="font-felix color-green">Get a Taste of Something Special!</h2>
+              <p>Sign up for our newsletter and receive exclusive discounts, event invites, and sneak peeks of new
+                dishes. Your next great meal starts here!"</p>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter your email address"
+                  aria-label="Enter your email address" aria-describedby="basic-addon2">
+                <button class="input-group-text" id="basic-addon2">SIGN UP NOW</button>
+              </div>
+              <h3>STAY CONNECTED</h3>
+              <p class="socials">
+                <a href="#"><img src="images/insta.png" alt=""></a>
+                <a href="#"><img src="images/twitr.png" alt=""></a>
+                <a href="#"><img src="images/linkid.png" alt=""></a>
+                <a href="#"><img src="images/fb.png" alt=""></a>
+                <a href="#"><img src="images/ytb.png" alt=""></a>
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row copy">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <span class="cpy-text">© 2024 ANCORA | IHG HOTELS, ALL RIGHTS RESERVED</span>
+            </div>
+            <div class="col-md-6 ftr-link">
+              <div class="float-end">
+                <a href="#">Promotions</a>
+                <a href="#">Events</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;  
+  src: url('../fonts/lato-v22-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/lato-v22-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/lato-v22-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/lato-v22-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/lato-v22-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/lato-v22-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Felix';
+  font-style: normal;  
+  src: url('../fonts/felixti.TTF'); /* IE9 Compat Modes */
+  src: local(''),
+      
+       url('../fonts/felixti.TTF') format('truetype'), /* Safari, Android, iOS */
+}
+
+*{margin:0;padding:0;outline:none;text-decoration:none;border:none;list-style:none}
+*,:before,:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.cf:after,.cf:before{content:"";display:block}
+.cf:after{clear:both}
+.cf{zoom:1;clear:both}
+img,img:focus{border:none;outline:0}
+img{max-width:100%;height:auto}
+form{margin:0;padding:0;border:0}
+a{color:#C3C3C3;text-decoration:none}
+a:hover{text-decoration:none;color:#8f8f8f}
+body,html{width:100%;outline:0}
+body{padding:0;margin:0;color:#212121;font-size:1em;-webkit-text-size-adjust:none;min-width:320px;font-family:"Lato",sans-serif; overflow-x: hidden; background: #FFFEF2;}
+.container{max-width:1920px;width:85%}
+.font-felix{ font-family: 'Felix', sans-serif;}
+.wrapper{width:100%;display:inline-block; position: relative; overflow-x: hidden;}
+
+@media only screen {
+  #carouselhome .carousel-caption h2{  font-family: 'Felix', sans-serif;}  
+  .overlay-black{ position: absolute; width: 100%; height: 100%; left: 0; top: 0; background: rgba(0, 0, 0, 50%);}
+  .color-green{ color: #243230;}
+  .white{ color: #F0E5D6;}
+  #carouselhome .carousel-caption .btn{ background: #243230; border-color: transparent; font-size: 12px; color: #FFFEF2;}
+  .btn-green{ background: #243230; border-color: transparent; font-size: 12px; color: #FFFEF2; border-radius: 3px !important;}  
+  .btn-green.white{ background: #FFFFFF; color: #243230;}
+  .btn-green.white:hover{ border-color: 1px solid #fff; border-color: #fff; color: #FFFFFF; background: transparent;}
+  .btn-green:hover{ background: #fff; border-color: #243230; color: #243230;}
+  #carouselhome .carousel-caption .btn:hover{ background: #fff; border-color: #243230; color: #243230;}
+  #carouselhome .carousel-indicators button {border-radius: 50%;width: 8px;height: 8px;}
+  .logo{ position: absolute;z-index: 2;padding-top: 0;display: flex; justify-content: end; width: auto; padding-bottom: 0;top: -40px;right: 12px;}
+  .logo img{ max-width: 70px;}
+  .strip-reserve{ position: fixed;z-index: 999;width: 100%; top: 20%; transition: left 200ms ease-out; -webkit-transition: left 200ms ease-out; right: 16px;transform: translate(50%, -50%) rotate(-90deg); display: flex; align-items: center;}
+  .strip-reserve .btn{ background: #243230;color: #FFFEF2; font-size: 12px;  border-radius: 0;}
+  .strip-reserve .btn:hover{ background: #fff; border-color: #243230; color: #243230;}
+  #navbarSupportedContent{ position: absolute;width: 100%; top: 50px; z-index: 2; left: 0px; padding: 0 1em; background: #243230;}
+  .navbar{ background: #243230;}
+  #carouselhome .carousel-item img{ height: 320px;object-fit: cover;}
+  #carouselhome .carousel-item h2{  font-size: 18px;}
+  .header-panel .nav-link{ text-decoration: none;}
+  .header-panel .nav-link::after{ content: ''; display: block; width: 0; height: 2px; background: #19b69e; transition: width .3s;}
+  .header-panel .nav-link:hover::after{ width: 100%;}
+  .header-panel .nav-link{ text-transform: uppercase;}
+  .header-panel .nav-link.active::after{width: 100%;}
+  .about-panel, .promotion-panel{ padding: 2em 0;}
+  .pic-col{ position: relative; top: 31px; text-align: center; padding-bottom: 3em; max-width: 302px; margin: 0 auto;}
+  .pic-col .bottom{ position: absolute; z-index: 1; right: 30px; top: -80px;}
+  .pic-col img{ max-width: 128px; border-radius: 5px;}
+  .conte-col{ padding-bottom: 2em;}
+  .promotion-panel{ background:  url('../images/line.svg') no-repeat 95% 50px, url('../images/line.svg') no-repeat 15px 95%, #243230; background-size: 50px;}
+  .heade-col{ color: #F0E5D6;}
+  #promoCarousel .card-body{ background: none; border: 0; padding: 0; padding-bottom: 3em;}
+  #promoCarousel .carousel-control-next-icon{ background: url('../images/arw-right.svg') no-repeat; background-position: 50%;background-size: 100% 100%;}
+  #promoCarousel .carousel-control-prev-icon{ background: url('../images/arw-lft.svg') no-repeat; background-position: 50%; background-size: 100% 100%;}
+  #promoCarousel .carousel-control-prev{left: -20px;}
+  #promoCarousel .carousel-control-next{right: -20px;}
+  #promoCarousel .carousel-item{ transition: transform .1s ease-in-out; }
+  #promoCarousel  .carousel-item .col-md-4 img{ padding: 0 1rem;}
+  #promoCarousel  .carousel-item .col-md-4{ position: relative;}
+  #promoCarousel{ padding-top: 1em;}
+  .caption-bottom{  padding: 0 1rem;}
+  .caption-bottom .conte-col{ background: #fff; padding: 1em; position: absolute; bottom: 0; width: 80%; left: 30px;}
+  .caption-bottom .des_col{ display: none;}
+  .caption-bottom .conte-col:hover .des_col{ display: block;}
+  .slide-cnt{ position: relative;}
+  .about-panel .col-content h1{ color: #243230;}
+  .gallery-panel{ background: #243230;}
+  .events-panel .main-row.row{
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  }
+
+  .events-panel .main-row.row::-webkit-scrollbar {
+    display: none;
+  }
+  .events-panel .main-row .card {
+    /*float: left;*/
+    max-width: 100%;
+    padding: 0 0;
+    margin-bottom: 2rem;
+    border: 0;
+    flex-basis: 95%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background: none;
+    margin-right: .75rem;
+    box-shadow: 1px 0px 7px -1px rgba(0, 0, 0, 0.45);
+    padding-bottom: 0;
+    
+  }
+  
+  .events-panel .main-row .card > img {
+    margin-bottom: .75rem;
+    width: 100%;
+  }
+  
+  .events-panel .main-row .card-text {
+    font-size: 85%;
+  }
+  .events-panel .course_card_content{ background: #fff; padding: 1em; min-height: 260px;}
+  .events-panel .course_card_content h3{ font-size: 1em; color: #000000; letter-spacing: 2px;}
+  .events-panel .course_card_content h2{ font-size: .97em; color: #243230;}
+  .events-panel .course_card_content p{ font-size: .875em;}
+  .events-panel .course_card_footer{ font-size: .875em; line-height: 16px; padding: 1em; background: #243230; color: #fff; display: flex;
+    align-items: center; justify-content: space-between; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;}
+  .events-panel .course_card_footer a{ float: right;}
+  .events-panel .course_card_footer span{ text-transform: uppercase; padding-right: .875em;}
+  .events-panel .course_card_footer img{ max-width: 30px;}
+  .tab-content {
+    padding: 10px;
+  }
+  .events-panel{ padding-bottom: 2em;}
+  .gallery-panel .nav-tabs{ border-bottom: 0;}
+  .gallery-panel  .nav-tabs .nav-item.show .nav-link, .gallery-panel  .nav-tabs .nav-link.active{ background-color: transparent; border-color: transparent;}
+  .gallery-panel  .nav-tabs .nav-link:hover{ border-color: transparent;}
+  
+  .gallery-panel .nav-tabs .nav-link{ color: #FFFFFF; text-transform: uppercase;}
+  .gallery-panel .nav-tabs .nav-link::after{ content: ''; display: block; width: 0; height: 2px; background: #19b69e; transition: width .3s;}
+  .gallery-panel .nav-tabs .nav-link:hover::after{ width: 100%;}
+  .gallery-panel  .nav-tabs .nav-link.active::after{ width: 100%;}
+  .gallery-panel .accordion-body{ padding: 0;}
+  .gallery-panel .col-sm-3{ padding-left: 0; padding-right: 2px; background: #243230;}
+  footer {    
+    padding: 86px 0;
+  }
+  .single-content {
+    text-align: center;
+    padding: 115px 0;
+  }
+  .single-box{ max-width: 100%;}
+  .single-box p {
+    color: #000000;
+    line-height: 1.9;
+  }
+  .single-box h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .single-box .card-area i {
+    color: #000000;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .single-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  .single-box ul li a {
+    text-decoration: none;
+    line-height: 2.5;
+    font-weight: 100;
+  }
+  
+  #basic-addon2 {
+    background: #243230;
+    color: #fff;
+  }
+  
+  .logo-ftr{ margin-bottom: 1em; max-width: 150px;}
+  .location{ margin-top: 1.5em;}
+  .ftr-link a{ padding-right: 1em; color: #000; display: inline-block;}
+  .ftr-link a:last-child{ padding-right: 0;}
+  .cpy-text{ font-size: 11px; display: inline-block; text-align: center; width: 100%;}
+}
+
+@media (min-width:768px) {
+  .tab-content .accordion-item {
+    border: 0;
+    border-radius: 0;
+  }
+}
+@media (max-width:767px) {
+  .tab-content > .tab-pane {
+        display: block;
+        opacity: 1;
+    }
+}
+@media (max-width: 768px) {
+  #promoCarousel .carousel-inner .carousel-item>div {
+      display: none;
+  }
+
+  #promoCarousel .carousel-inner .carousel-item>div:first-child {
+      display: block;
+  }
+}
+
+#promoCarousel .carousel-inner .carousel-item.active,
+#promoCarousel .carousel-inner .carousel-item-start,
+#promoCarousel .carousel-inner .carousel-item-next,
+#promoCarousel .carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+
+  #promoCarousel .carousel-inner .carousel-item-right.active,
+  #promoCarousel .carousel-inner .carousel-item-next,
+  #promoCarousel .carousel-item-next:not(.carousel-item-start) {
+      transform: translateX(25%) !important;
+  }
+
+  #promoCarousel .carousel-inner .carousel-item-left.active,
+  #promoCarousel .carousel-item-prev:not(.carousel-item-end),
+  #promoCarousel .active.carousel-item-start,
+  #promoCarousel .carousel-item-prev:not(.carousel-item-end) {
+      transform: translateX(-25%) !important;
+  }
+
+  #promoCarousel .carousel-item-next.carousel-item-start,
+  #promoCarousel .active.carousel-item-end {
+      transform: translateX(0) !important;
+  }
+
+  #promoCarousel .carousel-inner .carousel-item-prev,
+  #promoCarousel .carousel-item-prev:not(.carousel-item-end) {
+      transform: translateX(-25%) !important;
+  } 
+  #promoCarousel .carousel-inner{ max-width: 80%; margin: 0 auto;}
+  #carouselhome .carousel-item img{ height: auto;}
+  
+}
+
+
+
+
+@media (min-width: 480px) {
+
+
+}
+@media (min-width: 640px) {
+
+}
+@media (min-width: 992px) {
+  .navbar {background: none;  padding: 0;}
+  #navbarSupportedContent{ background: none; transform: translate(-50%, -50%); left: 50%; width: auto; top: 166px;}
+  #navbarSupportedContent .navbar-expand-lg .navbar-nav{ justify-content: center;width: 100%;}
+  .logo{ width: 100%; justify-content: center; top: 60px;}
+  .logo img{ max-width: 150px;}
+  .pic-col{ margin-top: 8em; max-width: 340px; margin-left: 20px;}
+  .pic-col .bottom{right: -280px;top: -80px;}
+  .pic-col img{ max-width: 100%;}
+  .about-panel .col-content{ max-width: 84%;}
+  .about-panel .col-content p{ font-size: 20px; padding: 1em 0;}
+  .about-panel .col-content h1{ font-size: 36px;}
+  .btn-green{ font-size: 14px;}
+  .about-panel, .promotion-panel, .events-panel, .gallery-panel{ padding: 5.5em 0;}
+  .header-panel .nav-link::after{ position: relative;bottom: -8px;}
+  .promotion-panel{ background-size: auto;}
+  .single-box{ max-width: 73%;}
+  .logo-ftr{ max-width: 100%;}
+}
+@media (min-width: 1024px) {
+  #carouselhome .carousel-item h2{ font-size: 3rem;}
+  #carouselhome .carousel-caption .btn{ font-size: 1em;}
+  .promotion-panel{ background:  url('../images/line.svg') no-repeat 95% 50px, url('../images/line.svg') no-repeat 60px 80%, #243230;}
+  .strip-reserve{ top: -400px;}
+  .events-panel .main-row .card { max-width: 33.3%; flex-basis: 33.3%; margin-right: 2.75rem;}
+  .events-panel .course_card_content h2{ font-size: 1.5em;}
+  .events-panel .course_card_content p{ font-size: 1em;}
+  .events-panel .course_card_content{ padding: 1.5em;}
+  .events-panel .course_card_footer span{ width: 50%;}
+
+}
+@media (min-width: 1280px) {
+
+/* .slider{flex:0 0 58%;max-width:63%} */
+/* body{ overflow-y: hidden;} */
+}
+@media (min-width: 1500px) {
+  
+}
